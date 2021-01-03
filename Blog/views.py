@@ -4,4 +4,4 @@ from django.shortcuts import HttpResponseRedirect
 
 
 def Index(request):
-    return HttpResponse("Welcome to the home page")
+    return HttpResponseRedirect(reverse('App_Blog:blog_list'))
